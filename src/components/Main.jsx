@@ -3,6 +3,7 @@ import { Text, View } from 'react-native'
 import RepositoryList from "./RespositoryList.jsx";
 import AppBar from "./AppBar.jsx";
 import { /* Redirect */ Route, Routes  } from "react-router-native";
+import LogInForm from "../pages/LogInForm.jsx";
 
 const Main = () => {
     return (
@@ -10,7 +11,7 @@ const Main = () => {
 				<AppBar />
         <Routes>
           <Route exact path='/' element={<RepositoryList />} />
-          <Route exact path='/signin' element={<Text>Working on it</Text>} />
+          <Route exact path='/signin' element={<LogInForm />} />
           {/* <Redirect to='/' /> */}
         </Routes>
       </View>
